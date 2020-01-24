@@ -7,7 +7,7 @@
 		public static function getConn()
 		{
 			if (self::$conn == null ){
-				self::$conn = new PDO ('mysql: host=locahost; dbname=criando-site;', 'root', 'senha');
+				self::$conn = new PDO ('mysql: host=locahost; dbname=criando-site;', 'root', 'No');
 			}
 
 			return self::$conn;
