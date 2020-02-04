@@ -4,6 +4,21 @@
 			<h2>{{titulo}}</h2>
 		</head>
 			<p>{{conteudo}}</p>
+
+			<br>
+			<hr>
+			<br>
+			<h2>Comentários:</h2>
+			<br>
+			{% if comentarios == false%}
+				<p>Essa página não possui comentários</p>
+			{% else %}
+				{% for coment in comentarios %}
+				<h4>{{coment.nome}}:</h4>
+				<p>{{coment.mensagem}}</p>
+				<br>
+				{% endfor %}
+			{% endif %}
 	</article>
 
 
